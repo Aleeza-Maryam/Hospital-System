@@ -98,7 +98,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <select name="doctor">
         <option value="">-- Select Doctor --</option>
         <?php
-          $doctors = ["Dr. Ahmed – Cardiology","Dr. Sara – Pediatrics","Dr. Usman – General","Dr. Nadia – Dermatology"];
+          $doctors = ["Dr. Ahmed - Cardiology","Dr. Sara - Pediatrics","Dr. Usman - General","Dr. Nadia - Dermatology"];
           foreach ($doctors as $d) {
             $sel = ($d == $doctor) ? 'selected' : '';
             echo "<option $sel>$d</option>";
@@ -112,7 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <label>Appointment Time</label>
       <select name="time">
         <?php
-          $slots = ["Morning 9am–12pm","Afternoon 1pm–4pm","Evening 5pm–8pm"];
+          $slots = ["Morning 9am–12pm","Afternoon 1pm-4pm","Evening 5pm-8pm"];
           foreach ($slots as $s) {
             $sel = ($s == $time) ? 'selected' : '';
             echo "<option $sel>$s</option>";
